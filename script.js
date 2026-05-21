@@ -437,12 +437,12 @@ window.addEventListener('load', () => {
   let lbPost=null, lbIdx=0;
 
   const lbSources = {
-    '1': ['Posts/WebP/Post 1 - 1.webp', 'Posts/WebP/Post 1 - 2.webp', 'Posts/WebP/Post 1 - 3.webp', 'Posts/WebP/Post 1 - 4.webp', 'Posts/WebP/Post 1 - 5.webp', 'Posts/WebP/Post 1 - 6.webp', 'Posts/WebP/Post 1 - 7.webp'],
+    '1': ['Posts/Conteúdo 1/Post 1 - 1.png', 'Posts/Conteúdo 1/Post 1 - 2.png', 'Posts/Conteúdo 1/Post 1 - 3.png', 'Posts/Conteúdo 1/Post 1 - 4.png', 'Posts/Conteúdo 1/Post 1 - 5.png', 'Posts/Conteúdo 1/Post 1 - 6.png', 'Posts/Conteúdo 1/Post 1 - 7.png'],
     '2': ['Posts/Conteúdo 2/1.jpg', 'Posts/Conteúdo 2/2.jpg', 'Posts/Conteúdo 2/3.jpg', 'Posts/Conteúdo 2/4.jpg'],
     '3': ['Posts/Conteúdo 3/1.mov'],
     '4': ['Posts/Conteúdo 4/26C54396-9E9F-4FB4-AE76-BA8BEADAC0A3.jpg'],
-    '5': ['Posts/WebP/Post 5 - 1.webp', 'Posts/WebP/Post 5 - 2.webp', 'Posts/WebP/Post 5 - 3.webp', 'Posts/WebP/Post 5 - 4.webp', 'Posts/WebP/Post 5 - 5.webp'],
-    '6': ['Posts/WebP/Post 6 - 1.webp', 'Posts/WebP/Post 6 - 2.webp', 'Posts/WebP/Post 6 - 3.webp', 'Posts/WebP/Post 6 - 4.webp', 'Posts/WebP/Post 6 - 5.webp', 'Posts/WebP/Post 6 - 6.webp', 'Posts/WebP/Post 6 - 7.webp'],
+    '5': ['Posts/COnteudo 5/Post 5 - 1.png', 'Posts/COnteudo 5/Post 5 - 2.png', 'Posts/COnteudo 5/Post 5 - 3.png', 'Posts/COnteudo 5/Post 5 - 4.png', 'Posts/COnteudo 5/Post 5 - 5.png'],
+    '6': ['Posts/Conteudo 6/Post 6 - 1.png', 'Posts/Conteudo 6/Post 6 - 2.png', 'Posts/Conteudo 6/Post 6 - 3.png', 'Posts/Conteudo 6/Post 6 - 4.png', 'Posts/Conteudo 6/Post 6 - 5.png', 'Posts/Conteudo 6/Post 6 - 6.png', 'Posts/Conteudo 6/Post 6 - 7.png'],
     'comece-aqui': ['destaque 1.jpg'],
     'agende': ['destaque 2.jpg']
   };
@@ -577,13 +577,13 @@ const projectData = {
   '1': {
     title: 'Post 1',
     sections: [
-      { img: 'Posts/WebP/Post 1 - 1.webp', sub: 'Slide 1', text: '' },
-      { img: 'Posts/WebP/Post 1 - 2.webp', sub: 'Slide 2', text: '' },
-      { img: 'Posts/WebP/Post 1 - 3.webp', sub: 'Slide 3', text: '' },
-      { img: 'Posts/WebP/Post 1 - 4.webp', sub: 'Slide 4', text: '' },
-      { img: 'Posts/WebP/Post 1 - 5.webp', sub: 'Slide 5', text: '' },
-      { img: 'Posts/WebP/Post 1 - 6.webp', sub: 'Slide 6', text: '' },
-      { img: 'Posts/WebP/Post 1 - 7.webp', sub: 'Slide 7', text: '' }
+      { img: 'Posts/Conteúdo 1/Post 1 - 1.png', sub: 'Slide 1', text: '' },
+      { img: 'Posts/Conteúdo 1/Post 1 - 2.png', sub: 'Slide 2', text: '' },
+      { img: 'Posts/Conteúdo 1/Post 1 - 3.png', sub: 'Slide 3', text: '' },
+      { img: 'Posts/Conteúdo 1/Post 1 - 4.png', sub: 'Slide 4', text: '' },
+      { img: 'Posts/Conteúdo 1/Post 1 - 5.png', sub: 'Slide 5', text: '' },
+      { img: 'Posts/Conteúdo 1/Post 1 - 6.png', sub: 'Slide 6', text: '' },
+      { img: 'Posts/Conteúdo 1/Post 1 - 7.png', sub: 'Slide 7', text: '' }
     ]
   },
   '2': {
@@ -610,23 +610,23 @@ const projectData = {
   '5': {
     title: 'Post 5',
     sections: [
-      { img: 'Posts/WebP/Post 5 - 1.webp', sub: 'Slide 1', text: '' },
-      { img: 'Posts/WebP/Post 5 - 2.webp', sub: 'Slide 2', text: '' },
-      { img: 'Posts/WebP/Post 5 - 3.webp', sub: 'Slide 3', text: '' },
-      { img: 'Posts/WebP/Post 5 - 4.webp', sub: 'Slide 4', text: '' },
-      { img: 'Posts/WebP/Post 5 - 5.webp', sub: 'Slide 5', text: '' }
+      { img: 'Posts/COnteudo 5/Post 5 - 1.png', sub: 'Slide 1', text: '' },
+      { img: 'Posts/COnteudo 5/Post 5 - 2.png', sub: 'Slide 2', text: '' },
+      { img: 'Posts/COnteudo 5/Post 5 - 3.png', sub: 'Slide 3', text: '' },
+      { img: 'Posts/COnteudo 5/Post 5 - 4.png', sub: 'Slide 4', text: '' },
+      { img: 'Posts/COnteudo 5/Post 5 - 5.png', sub: 'Slide 5', text: '' }
     ]
   },
   '6': {
     title: 'Post 6',
     sections: [
-      { img: 'Posts/WebP/Post 6 - 1.webp', sub: 'Slide 1', text: '' },
-      { img: 'Posts/WebP/Post 6 - 2.webp', sub: 'Slide 2', text: '' },
-      { img: 'Posts/WebP/Post 6 - 3.webp', sub: 'Slide 3', text: '' },
-      { img: 'Posts/WebP/Post 6 - 4.webp', sub: 'Slide 4', text: '' },
-      { img: 'Posts/WebP/Post 6 - 5.webp', sub: 'Slide 5', text: '' },
-      { img: 'Posts/WebP/Post 6 - 6.webp', sub: 'Slide 6', text: '' },
-      { img: 'Posts/WebP/Post 6 - 7.webp', sub: 'Slide 7', text: '' }
+      { img: 'Posts/Conteudo 6/Post 6 - 1.png', sub: 'Slide 1', text: '' },
+      { img: 'Posts/Conteudo 6/Post 6 - 2.png', sub: 'Slide 2', text: '' },
+      { img: 'Posts/Conteudo 6/Post 6 - 3.png', sub: 'Slide 3', text: '' },
+      { img: 'Posts/Conteudo 6/Post 6 - 4.png', sub: 'Slide 4', text: '' },
+      { img: 'Posts/Conteudo 6/Post 6 - 5.png', sub: 'Slide 5', text: '' },
+      { img: 'Posts/Conteudo 6/Post 6 - 6.png', sub: 'Slide 6', text: '' },
+      { img: 'Posts/Conteudo 6/Post 6 - 7.png', sub: 'Slide 7', text: '' }
     ]
   },
   'comece-aqui': {
