@@ -66,10 +66,10 @@ window.addEventListener('load', () => {
     const sc = document.getElementById(`sc-${id}`);
     if(sc) sc.textContent = `${ni+1} / ${s.n}`;
   }
-  ['1','5','6'].forEach(initIG);
+  ['1','2','5','6'].forEach(initIG);
 
   /* ── Status & actions ─────────────────────────────────── */
-  const statuses = {1:'none',5:'none',6:'none'};
+  const statuses = {1:'none', 2:'none', 3:'none', 4:'none', 5:'none', 6:'none'};
   const smap = {
     approved:{ label:'Aprovado',   sb:'sb-approved' },
     rejected:{ label:'Reprovado',  sb:'sb-rejected' },
@@ -113,7 +113,7 @@ window.addEventListener('load', () => {
     const vals = Object.values(statuses);
     const a = vals.filter(v=>v==='approved').length;
     const r = vals.filter(v=>v==='rejected').length;
-    const total = 3;
+    const total = 6;
     const p = total - a - r;
     
     // Header progress
@@ -296,7 +296,7 @@ window.addEventListener('load', () => {
     if (!currentUser || !currentToken) return; // Só tenta salvar se estiver logado
 
     const data = { statuses:{...statuses}, comments:{} };
-    ['1','5','6'].forEach(id=>{
+    ['1','2','3','4','5','6'].forEach(id=>{
       const cl=document.getElementById(`comments-${id}`);
       if(cl){
         const items=cl.querySelectorAll('.comment-item');
@@ -364,7 +364,7 @@ window.addEventListener('load', () => {
       const resp=await fetch('/api/load');
       const data=await resp.json();
       if(!data||Object.keys(data).length===0){ updateCounts(); return; }
-      ['1','5','6'].forEach(id=>{
+      ['1','2','3','4','5','6'].forEach(id=>{
         const comments=data.comments?.[id]||[];
         const cl=document.getElementById(`comments-${id}`);
         if(cl && comments.length){
@@ -376,7 +376,7 @@ window.addEventListener('load', () => {
           if(bc) bc.classList.add('visible');
         }
       });
-      ['1','5','6'].forEach(id=>{ const s=data.statuses?.[id]||'none'; if(s!=='none') applyStatus(id,s); });
+      ['1','2','3','4','5','6'].forEach(id=>{ const s=data.statuses?.[id]||'none'; if(s!=='none') applyStatus(id,s); });
     } catch(e){ console.error('Erro ao carregar:',e); }
     updateCounts();
   }
@@ -438,6 +438,9 @@ window.addEventListener('load', () => {
 
   const lbSources = {
     '1': ['Posts/WebP/Post 1 - 1.webp', 'Posts/WebP/Post 1 - 2.webp', 'Posts/WebP/Post 1 - 3.webp', 'Posts/WebP/Post 1 - 4.webp', 'Posts/WebP/Post 1 - 5.webp', 'Posts/WebP/Post 1 - 6.webp', 'Posts/WebP/Post 1 - 7.webp'],
+    '2': ['Posts/Conteúdo 2/1.jpg', 'Posts/Conteúdo 2/2.jpg', 'Posts/Conteúdo 2/3.jpg', 'Posts/Conteúdo 2/4.jpg'],
+    '3': ['Posts/Conteúdo 3/1.mov'],
+    '4': ['Posts/Conteúdo 4/26C54396-9E9F-4FB4-AE76-BA8BEADAC0A3.jpg'],
     '5': ['Posts/WebP/Post 5 - 1.webp', 'Posts/WebP/Post 5 - 2.webp', 'Posts/WebP/Post 5 - 3.webp', 'Posts/WebP/Post 5 - 4.webp', 'Posts/WebP/Post 5 - 5.webp'],
     '6': ['Posts/WebP/Post 6 - 1.webp', 'Posts/WebP/Post 6 - 2.webp', 'Posts/WebP/Post 6 - 3.webp', 'Posts/WebP/Post 6 - 4.webp', 'Posts/WebP/Post 6 - 5.webp', 'Posts/WebP/Post 6 - 6.webp', 'Posts/WebP/Post 6 - 7.webp'],
     'comece-aqui': ['destaque 1.jpg'],
@@ -446,15 +449,27 @@ window.addEventListener('load', () => {
 
   const postMeta = {
     '1': {
-      caption: 'Legenda do Post 1. Adicione seus comentários no painel de feedback.',
+      caption: 'É comum ouvirmos que tal área escolheu um profissional. Por exemplo: “a logística me escolheu”, mas quem a escolheu foi você e, com isso, desenhou o caminho de oportunidades para a sua vida. Vou te explicar.<br><br>Me chamo Juliana Ximendes, trabalho na LHH, maior consultoria de carreira do mundo. Nos últimos dez anos, em minha prática de trabalho, vi que muitas pessoas não conseguem tomar escolhas conscientes em suas carreiras, porque o ambiente as moldou desde o primeiro cargo. Ou seja, conscientemente, são poucas as pessoas que conseguem pensar e refletir sobre suas jornadas e o que, de fato, buscam para suas vidas.<br><br>Tudo na carreira vem da tomada de escolha consciente. Talvez você só nunca tenha pensado dessa forma.<br><br>Por isso, aqui, falaremos de construção de carreira, networking, posicionamento, influência, relacionamento e muito mais, porque tudo isso passa por escolher o próximo passo na carreira de maneira consciente.<br><br>Chegou a hora de compartilhar mais a minha visão e as minhas perspectivas advindas de uma trajetória de vivências na área.<br><br>Seja bem-vindo!',
+      cards: []
+    },
+    '2': {
+      caption: '3 hábitos das pessoas que crescem em suas carreiras<br><br>Elas vendem o tempo todo, sem necessariamente esperarem o “momento ideal”. Ou seja, não decoram o pitch. Qualquer conversa é uma oportunidade de comunicar o que fazem, porque têm clareza do caminho.<br><br>Eles investem no relacionamento antes de precisar dele. Não ligam só quando precisam de algo. Constroem antes de precisar, afinal, sabem manter a rede aquecida.<br><br>Eles se posicionam como autoridade antes de se sentirem prontos. Esse é o mais difícil. A maioria espera chegar num ponto imaginário de preparação IDEAL para começar a agir. Os que crescem começam a fazer e chegam lá no processo.',
+      cards: []
+    },
+    '3': {
+      caption: 'POV: você tem muitas dúvidas na sua carreira e agora você vai conhecer algumas coisas que ouço de executivos de empresas<br><br>Legenda:<br><br>1 Fiquei mil anos dentro de uma empresa e nunca fiz networking. Agora que eu preciso, não sei como fazer isso.<br><br>2 Tenho dúvidas sobre o meu próximo passo, se eu continuo na carreira executiva ou migro para outro formato de atuação.<br><br>3 Depois de tanto tempo na empresa, não tenho referência de remuneração no mercado.<br><br>4 Estar à frente de um recrutador é difícil, porque já estive do lado da mesa, e agora não sei como me comportar.',
+      cards: []
+    },
+    '4': {
+      caption: 'Card 1: As pessoas mais influentes que conheci na minha trajetória têm uma coisa em comum que me levou um tempo para nomear: elas nunca precisam convencer ninguém. E é exatamente isso que convence.<br><br>Legenda:<br>Quando alguém chega com urgência, com necessidade de aprovação, com energia de "eu preciso que você me ajude", é normal que o outro recue instintivamente, mas quando alguém apresenta a si mesmo com confiança e firmeza, o interlocutor entende como ele contribui, assim iniciando um canal de reciprocidade.',
       cards: []
     },
     '5': {
-      caption: 'Legenda do Post 5. Adicione seus comentários no painel de feedback.',
+      caption: 'O que eu aprendi observando quem realmente abre portas pelo networking:<br><br>Eles genuinamente lembram do que o outro precisa, não apenas o que eles querem.<br><br>Eles aparecem antes de precisar de algo: mandam um artigo que faz sentido, comentam quando a pessoa faz algo relevante, se mostram presentes.<br><br>É lento, são pequenos passos que exigem constância e funcionam de verdade na construção da sua carreira.',
       cards: []
     },
     '6': {
-      caption: 'Legenda do Post 6. Adicione seus comentários no painel de feedback.',
+      caption: '10 anos de consultoria & alguns tantos aprendizados:<br><br>Cargo não dá liderança. São coisas completamente diferentes. E confundir as duas é o começo do fim de qualquer gestão.<br><br>As pessoas não compram o melhor produto. Compram o produto de quem elas confiam. Confiança vem antes da oferta sempre.<br><br>Fazer a pergunta na hora certa é o importante o tempo inteiro. Todo o resto é consequência.<br><br>Reputação é o ativo mais lento de construir e o mais rápido de perder. E ela é construída nos detalhes que você acha que ninguém está vendo.<br><br>Quem cresce na carreira não é necessariamente quem trabalha mais, mas quem comunica melhor, tendo a habilidade de tornar visível o valor das suas entregas.<br><br>Você não precisa ser extrovertido para se comunicar bem.<br><br>Você precisa ser genuinamente curioso sobre o outro e praticar a escuta ativa todos os dias.',
       cards: []
     }
   };
@@ -480,7 +495,11 @@ window.addEventListener('load', () => {
       srcs.forEach(src => {
         const div = document.createElement('div');
         div.className = 'lb-track-item';
-        div.innerHTML = `<img src="${src}" loading="lazy">`;
+        if (src.toLowerCase().endsWith('.mov') || src.toLowerCase().endsWith('.mp4')) {
+          div.innerHTML = `<video src="${src}" controls playsinline style="width:100%; max-height:100%; object-fit:contain; display:block; margin:auto;"></video>`;
+        } else {
+          div.innerHTML = `<img src="${src}" loading="lazy">`;
+        }
         track.appendChild(div);
       });
       track.setAttribute('data-post', lbPost);
@@ -567,6 +586,27 @@ const projectData = {
       { img: 'Posts/WebP/Post 1 - 7.webp', sub: 'Slide 7', text: '' }
     ]
   },
+  '2': {
+    title: 'Post 2',
+    sections: [
+      { img: 'Posts/Conteúdo 2/1.jpg', sub: 'Slide 1', text: '' },
+      { img: 'Posts/Conteúdo 2/2.jpg', sub: 'Slide 2', text: '' },
+      { img: 'Posts/Conteúdo 2/3.jpg', sub: 'Slide 3', text: '' },
+      { img: 'Posts/Conteúdo 2/4.jpg', sub: 'Slide 4', text: '' }
+    ]
+  },
+  '3': {
+    title: 'Post 3',
+    sections: [
+      { img: 'Posts/Conteúdo 3/1.mov', sub: 'Vídeo', text: '' }
+    ]
+  },
+  '4': {
+    title: 'Post 4',
+    sections: [
+      { img: 'Posts/Conteúdo 4/26C54396-9E9F-4FB4-AE76-BA8BEADAC0A3.jpg', sub: 'Imagem', text: '' }
+    ]
+  },
   '5': {
     title: 'Post 5',
     sections: [
@@ -617,9 +657,15 @@ function openProject(key) {
   data.sections.forEach((sec, i) => {
     const row = document.createElement('div');
     row.className = `pv-row ${i % 2 !== 0 ? 'reverse' : ''}`;
+    
+    let mediaHtml = `<img src="${sec.img}" alt="${sec.sub}" loading="lazy">`;
+    if (sec.img.toLowerCase().endsWith('.mov') || sec.img.toLowerCase().endsWith('.mp4')) {
+      mediaHtml = `<video src="${sec.img}" controls playsinline style="width:100%; max-height:100%; object-fit:contain; display:block;"></video>`;
+    }
+    
     row.innerHTML = `
       <div class="pv-img-wrap reveal">
-        <img src="${sec.img}" alt="${sec.sub}" loading="lazy">
+        ${mediaHtml}
       </div>
       <div class="pv-text reveal">
         <h3>${sec.sub}</h3>
