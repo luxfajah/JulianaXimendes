@@ -13,7 +13,10 @@ export default async function handler(req, res) {
     // Client variations
     'ximenas@duasmaos.com.br': 'ximenas2026',
     'ximenas@duasmãos.com.br': 'ximenas2026',
-    'ximenas': 'ximenas2026'
+    'ximenas': 'ximenas2026',
+    'juliana@duasmaos.com.br': 'juliana2026',
+    'juliana@duasmãos.com.br': 'juliana2026',
+    'juliana': 'juliana2026'
   };
 
   const userLower = username?.toLowerCase().trim();
