@@ -520,7 +520,7 @@ window.addEventListener('load', () => {
     const meta=postMeta[postId]||{};
     const cap=document.getElementById('lbCaption');
     if(cap) {
-      cap.innerHTML=`<strong>ximenas</strong> ${meta.caption||''}`;
+      cap.innerHTML=`<strong>juximendes</strong> ${meta.caption||''}`;
     }
     
     const cardsEl=document.getElementById('lbCards');
