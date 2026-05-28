@@ -442,18 +442,18 @@ window.addEventListener('load', () => {
     '3': ['Posts/Conteúdo 3/1.mov'],
     '4': ['Posts/Conteúdo 4/26C54396-9E9F-4FB4-AE76-BA8BEADAC0A3.jpg'],
     '5': ['Posts/COnteudo 5/Post 5 - 1.png', 'Posts/COnteudo 5/Post 5 - 2.png', 'Posts/COnteudo 5/Post 5 - 3.png', 'Posts/COnteudo 5/Post 5 - 4.png', 'Posts/COnteudo 5/Post 5 - 5.png'],
-    '6': ['Posts/Conteudo 6/Post 6 - 1.png', 'Posts/Conteudo 6/Post 6 - 2.png', 'Posts/Conteudo 6/Post 6 - 3.png', 'Posts/Conteudo 6/Post 6 - 4.png', 'Posts/Conteudo 6/Post 6 - 5.png', 'Posts/Conteudo 6/Post 6 - 6.png', 'Posts/Conteudo 6/Post 6 - 7.png'],
+    '6': ['Posts/Conteudo 6/Post 6 - 1.png', 'Posts/Conteudo 6/Post 6 - 2.png', 'Posts/Conteúdo 6/Post 6 - 3.png', 'Posts/Conteudo 6/Post 6 - 4.png', 'Posts/Conteudo 6/Post 6 - 5.png', 'Posts/Conteúdo 6/Post 6 - 6.png', 'Posts/Conteúdo 6/Post 6 - 7.png'],
     'comece-aqui': ['destaque 1.jpg'],
     'agende': ['destaque 2.jpg']
   };
 
   const postMeta = {
     '1': {
-      caption: 'É comum ouvirmos que tal área escolheu um profissional. Por exemplo: “a logística me escolheu”, mas quem a escolheu foi você e, com isso, desenhou o caminho de oportunidades para a sua vida. Vou te explicar.<br><br>Me chamo Juliana Ximendes, trabalho na LHH, maior consultoria de carreira do mundo. Nos últimos dez anos, em minha prática de trabalho, vi que muitas pessoas não conseguem tomar escolhas conscientes em suas carreiras, porque o ambiente as moldou desde o primeiro cargo. Ou seja, conscientemente, são poucas as pessoas que conseguem pensar e refletir sobre suas jornadas e o que, de fato, buscam para suas vidas.<br><br>Tudo na carreira vem da tomada de escolha consciente. Talvez você só nunca tenha pensado dessa forma.<br><br>Por isso, aqui, falaremos de construção de carreira, networking, posicionamento, influência, relacionamento e muito mais, porque tudo isso passa por escolher o próximo passo na carreira de maneira consciente.<br><br>Chegou a hora de compartilhar mais a minha visão e as minhas perspectivas advindas de uma trajetória de vivências na área.<br><br>Seja bem-vindo!',
+      caption: 'Você sabia que o ambiente profissional te molda desde o primeiro cargo? Mas, é possível escolher de forma consciente. Vamos falar sobre isso?',
       cards: []
     },
     '2': {
-      caption: '3 hábitos das pessoas que crescem em suas carreiras<br><br>Elas vendem o tempo todo, sem necessariamente esperarem o “momento ideal”. Ou seja, não decoram o pitch. Qualquer conversa é uma oportunidade de comunicar o que fazem, porque têm clareza do caminho.<br><br>Eles investem no relacionamento antes de precisar dele. Não ligam só quando precisam de algo. Constroem antes de precisar, afinal, sabem manter a rede aquecida.<br><br>Eles se posicionam como autoridade antes de se sentirem prontos. Esse é o mais difícil. A maioria espera chegar num ponto imaginário de preparação IDEAL para começar a agir. Os que crescem começam a fazer e chegam lá no processo.',
+      caption: 'Três hábitos fundamentais de quem cresce na carreira: saber se vender, investir em relacionamentos genuínos e se posicionar como autoridade antes de se sentir 100% pronto.',
       cards: []
     },
     '3': {
@@ -465,11 +465,11 @@ window.addEventListener('load', () => {
       cards: []
     },
     '5': {
-      caption: 'O que eu aprendi observando quem realmente abre portas pelo networking:<br><br>Eles genuinamente lembram do que o outro precisa, não apenas o que eles querem.<br><br>Eles aparecem antes de precisar de algo: mandam um artigo que faz sentido, comentam quando a pessoa faz algo relevante, se mostram presentes.<br><br>É lento, são pequenos passos que exigem constância e funcionam de verdade na construção da sua carreira.',
+      caption: 'O tal do networking... Quero te contar o que eu aprendi sobre ele nestes anos de LHH! 😊',
       cards: []
     },
     '6': {
-      caption: '10 anos de consultoria & alguns tantos aprendizados:<br><br>Cargo não dá liderança. São coisas completamente diferentes. E confundir as duas é o começo do fim de qualquer gestão.<br><br>As pessoas não compram o melhor produto. Compram o produto de quem elas confiam. Confiança vem antes da oferta sempre.<br><br>Fazer a pergunta na hora certa é o importante o tempo inteiro. Todo o resto é consequência.<br><br>Reputação é o ativo mais lento de construir e o mais rápido de perder. E ela é construída nos detalhes que você acha que ninguém está vendo.<br><br>Quem cresce na carreira não é necessariamente quem trabalha mais, mas quem comunica melhor, tendo a habilidade de tornar visível o valor das suas entregas.<br><br>Você não precisa ser extrovertido para se comunicar bem.<br><br>Você precisa ser genuinamente curioso sobre o outro e praticar a escuta ativa todos os dias.',
+      caption: 'Um compilado importante do que esses 10 anos me mostraram!',
       cards: []
     }
   };

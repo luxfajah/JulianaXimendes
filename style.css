@@ -1646,3 +1646,117 @@ body.locked {
     justify-content: center;
   }
 }
+
+/* ─── DOWNLOADS SECTION ──────────────────────────── */
+.downloads-section {
+  position: relative;
+  padding: 100px 24px;
+  z-index: 2;
+  background: rgba(255,255,255,0.03);
+}
+.downloads-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.downloads-eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #fff;
+  opacity: 0.7;
+  margin-bottom: 12px;
+}
+.downloads-title {
+  font-family: 'Canela', 'Fraunces', serif;
+  font-size: clamp(32px, 5vw, 48px);
+  font-weight: 300;
+  color: #fff;
+  line-height: 1.15;
+  margin-bottom: 16px;
+}
+.downloads-title em {
+  font-style: italic;
+  color: rgba(255,255,255,0.7);
+}
+.downloads-divider {
+  width: 40px;
+  height: 2px;
+  background: rgba(255,255,255,0.3);
+  border-radius: 2px;
+  margin-bottom: 40px;
+}
+.downloads-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+.dl-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 24px;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 16px;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.dl-card:hover {
+  background: rgba(255,255,255,0.18);
+  border-color: rgba(255,255,255,0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.2);
+}
+.dl-card.dl-all {
+  background: rgba(180, 5, 60, 0.25);
+  border-color: rgba(180, 5, 60, 0.4);
+  margin-bottom: 8px;
+}
+.dl-card.dl-all:hover {
+  background: rgba(180, 5, 60, 0.4);
+  border-color: rgba(180, 5, 60, 0.6);
+}
+.dl-icon {
+  font-size: 24px;
+  flex-shrink: 0;
+}
+.dl-num {
+  font-family: 'Fraunces', serif;
+  font-size: 22px;
+  font-weight: 300;
+  color: rgba(255,255,255,0.5);
+  min-width: 36px;
+  flex-shrink: 0;
+}
+.dl-info {
+  flex: 1;
+}
+.dl-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 2px;
+}
+.dl-sub {
+  font-size: 11px;
+  color: rgba(255,255,255,0.5);
+  font-weight: 500;
+  letter-spacing: 0.05em;
+}
+.dl-arrow {
+  font-size: 18px;
+  color: rgba(255,255,255,0.4);
+  transition: transform 0.3s, color 0.3s;
+}
+.dl-card:hover .dl-arrow {
+  transform: translate(3px, -3px);
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .downloads-section { padding: 60px 16px; }
+  .dl-card { padding: 14px 16px; }
+}
