@@ -449,11 +449,11 @@ window.addEventListener('load', () => {
 
   const postMeta = {
     '1': {
-      caption: 'Você sabia que o ambiente profissional te molda desde o primeiro cargo? Mas, é possível escolher de forma consciente. Vamos falar sobre isso?',
+      caption: 'Chegou a hora de compartilhar mais a minha visão e as minhas perspectivas advindas de uma trajetória de vivências na área.<br><br>Seja bem-vindo!',
       cards: []
     },
     '2': {
-      caption: 'Três hábitos fundamentais de quem cresce na carreira: saber se vender, investir em relacionamentos genuínos e se posicionar como autoridade antes de se sentir 100% pronto.',
+      caption: '👆',
       cards: []
     },
     '3': {
