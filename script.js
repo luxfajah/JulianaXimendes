@@ -437,10 +437,10 @@ window.addEventListener('load', () => {
   let lbPost=null, lbIdx=0;
 
   const lbSources = {
-    '1': ['posts v2/Conteúdo 1/Post 1 - 1.png', 'posts v2/Conteúdo 1/Post 1 - 2.png', 'posts v2/Conteúdo 1/Post 1 - 3.png', 'posts v2/Conteúdo 1/Post 1 - 4.png', 'posts v2/Conteúdo 1/Post 1 - 5.png', 'posts v2/Conteúdo 1/Post 1 - 6.png', 'posts v2/Conteúdo 1/Post 1 - 7.png'],
-    '2': ['posts v2/Conteúdo 2/1.jpg', 'posts v2/Conteúdo 2/2.jpg', 'posts v2/Conteúdo 2/3.jpg', 'posts v2/Conteúdo 2/4.jpg'],
-    '3': ['posts v2/Conteúdo 3/1.mov'],
-    '4': ['posts v2/Conteúdo 4/26C54396-9E9F-4FB4-AE76-BA8BEADAC0A3.jpg'],
+    '1': ['posts v2/Conteudo 1/Post 1 - 1.png', 'posts v2/Conteudo 1/Post 1 - 2.png', 'posts v2/Conteudo 1/Post 1 - 3.png', 'posts v2/Conteudo 1/Post 1 - 4.png', 'posts v2/Conteudo 1/Post 1 - 5.png', 'posts v2/Conteudo 1/Post 1 - 6.png', 'posts v2/Conteudo 1/Post 1 - 7.png'],
+    '2': ['posts v2/Conteudo 2/1.jpg', 'posts v2/Conteudo 2/2.jpg', 'posts v2/Conteudo 2/3.jpg', 'posts v2/Conteudo 2/4.jpg'],
+    '3': ['posts v2/Conteudo 3/1.mov'],
+    '4': ['posts v2/Conteudo 4/26C54396-9E9F-4FB4-AE76-BA8BEADAC0A3.jpg'],
     '5': ['posts v2/COnteudo 5/Post 5 - 1.png', 'posts v2/COnteudo 5/Post 5 - 2.png', 'posts v2/COnteudo 5/Post 5 - 3.png', 'posts v2/COnteudo 5/Post 5 - 4.png', 'posts v2/COnteudo 5/Post 5 - 5.png'],
     '6': ['posts v2/Conteudo 6/Post 6 - 1.png', 'posts v2/Conteudo 6/Post 6 - 2.png', 'posts v2/Conteudo 6/Post 6 - 3.png', 'posts v2/Conteudo 6/Post 6 - 4.png', 'posts v2/Conteudo 6/Post 6 - 5.png', 'posts v2/Conteudo 6/Post 6 - 6.png', 'posts v2/Conteudo 6/Post 6 - 7.png'],
     'comece-aqui': ['destaque 1.jpg'],
@@ -577,34 +577,34 @@ const projectData = {
   '1': {
     title: 'Post 1',
     sections: [
-      { img: 'posts v2/Conteúdo 1/Post 1 - 1.png', sub: 'Slide 1', text: '' },
-      { img: 'posts v2/Conteúdo 1/Post 1 - 2.png', sub: 'Slide 2', text: '' },
-      { img: 'posts v2/Conteúdo 1/Post 1 - 3.png', sub: 'Slide 3', text: '' },
-      { img: 'posts v2/Conteúdo 1/Post 1 - 4.png', sub: 'Slide 4', text: '' },
-      { img: 'posts v2/Conteúdo 1/Post 1 - 5.png', sub: 'Slide 5', text: '' },
-      { img: 'posts v2/Conteúdo 1/Post 1 - 6.png', sub: 'Slide 6', text: '' },
-      { img: 'posts v2/Conteúdo 1/Post 1 - 7.png', sub: 'Slide 7', text: '' }
+      { img: 'posts v2/Conteudo 1/Post 1 - 1.png', sub: 'Slide 1', text: '' },
+      { img: 'posts v2/Conteudo 1/Post 1 - 2.png', sub: 'Slide 2', text: '' },
+      { img: 'posts v2/Conteudo 1/Post 1 - 3.png', sub: 'Slide 3', text: '' },
+      { img: 'posts v2/Conteudo 1/Post 1 - 4.png', sub: 'Slide 4', text: '' },
+      { img: 'posts v2/Conteudo 1/Post 1 - 5.png', sub: 'Slide 5', text: '' },
+      { img: 'posts v2/Conteudo 1/Post 1 - 6.png', sub: 'Slide 6', text: '' },
+      { img: 'posts v2/Conteudo 1/Post 1 - 7.png', sub: 'Slide 7', text: '' }
     ]
   },
   '2': {
     title: 'Post 2',
     sections: [
-      { img: 'posts v2/Conteúdo 2/1.jpg', sub: 'Slide 1', text: '' },
-      { img: 'posts v2/Conteúdo 2/2.jpg', sub: 'Slide 2', text: '' },
-      { img: 'posts v2/Conteúdo 2/3.jpg', sub: 'Slide 3', text: '' },
-      { img: 'posts v2/Conteúdo 2/4.jpg', sub: 'Slide 4', text: '' }
+      { img: 'posts v2/Conteudo 2/1.jpg', sub: 'Slide 1', text: '' },
+      { img: 'posts v2/Conteudo 2/2.jpg', sub: 'Slide 2', text: '' },
+      { img: 'posts v2/Conteudo 2/3.jpg', sub: 'Slide 3', text: '' },
+      { img: 'posts v2/Conteudo 2/4.jpg', sub: 'Slide 4', text: '' }
     ]
   },
   '3': {
     title: 'Post 3',
     sections: [
-      { img: 'posts v2/Conteúdo 3/1.mov', sub: 'Vídeo', text: '' }
+      { img: 'posts v2/Conteudo 3/1.mov', sub: 'Vídeo', text: '' }
     ]
   },
   '4': {
     title: 'Post 4',
     sections: [
-      { img: 'posts v2/Conteúdo 4/26C54396-9E9F-4FB4-AE76-BA8BEADAC0A3.jpg', sub: 'Imagem', text: '' }
+      { img: 'posts v2/Conteudo 4/26C54396-9E9F-4FB4-AE76-BA8BEADAC0A3.jpg', sub: 'Imagem', text: '' }
     ]
   },
   '5': {
