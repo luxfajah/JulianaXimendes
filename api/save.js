@@ -19,7 +19,7 @@ export default async function handler(req, res) {
       }
 
       const REPO_OWNER = 'luxfajah'; 
-      const REPO_NAME = 'ximenas'; 
+      const REPO_NAME = 'JulianaXimendes'; 
       const FILE_PATH = 'database.json'; 
 
       // 1. Resgata o "sha" atual

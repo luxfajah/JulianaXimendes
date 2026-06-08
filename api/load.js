@@ -2,7 +2,7 @@ export default async function handler(req, res) {
   try {
     const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
     const REPO_OWNER = 'luxfajah'; 
-    const REPO_NAME = 'ximenas'; 
+    const REPO_NAME = 'JulianaXimendes'; 
     const FILE_PATH = 'database.json'; 
 
     // Usamos a API de conteúdos para garantir que pegamos a versão mais fresca com o token
