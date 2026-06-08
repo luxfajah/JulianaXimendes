@@ -1,33 +1,29 @@
+import { createClient } from 'redis';
+
 export default async function handler(req, res) {
+  let client;
   try {
-    const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
-    const REPO_OWNER = 'luxfajah'; 
-    const REPO_NAME = 'JulianaXimendes'; 
-    const FILE_PATH = 'database.json'; 
+    const url = process.env.REDIS_URL || 'redis://default:YpxigeuX75iY6FvCubASt2ruLVBKImHF@redis-10083.c92.us-east-1-3.ec2.cloud.redislabs.com:10083';
+    client = createClient({ url });
+    await client.connect();
 
-    // Usamos a API de conteúdos para garantir que pegamos a versão mais fresca com o token
-    const url = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${FILE_PATH}?t=${Date.now()}`;
-    
-    const response = await fetch(url, {
-      headers: {
-        'Authorization': `Bearer ${GITHUB_TOKEN}`,
-        'Accept': 'application/vnd.github.v3.raw+json', // .raw retorna o conteúdo direto
-        'Cache-Control': 'no-cache'
-      }
-    });
-
-    if (!response.ok) {
-      if (response.status === 404) {
-        return res.status(200).json({ statuses: {}, comments: {} });
-      }
-      const errorText = await response.text();
-      throw new Error(`Load Error: ${response.status} ${errorText}`);
+    const rawData = await client.get('ximenas_data');
+    if (!rawData) {
+      return res.status(200).json({ statuses: {}, comments: {} });
     }
 
-    const data = await response.json();
-    res.status(200).json(data);
+    const data = JSON.parse(rawData);
+    return res.status(200).json(data);
   } catch (error) {
     console.error('Load Error:', error);
-    res.status(500).json({ error: error.message });
+    return res.status(500).json({ error: error.message });
+  } finally {
+    if (client) {
+      try {
+        await client.disconnect();
+      } catch (err) {
+        console.error('Disconnect Error:', err);
+      }
+    }
   }
 }
